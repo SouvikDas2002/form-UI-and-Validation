@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dev-souvik-Form</title>
+    <link rel="stylesheet" href="form.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+
+</head>
+<body>
+    
+    <div class="full-page">
+        
+        <div class="navbar">
+            <nav>
+                <ul id='MenuItems'>
+                    <li><a href='form.html'>Home</a></li>
+                    <li><a href='#'>About Me</a></li>
+                    <li><a href='#'>Services</a></li>
+                    <li><a href='#'>Contact</a></li>
+                    <li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'" style="width:auto;">Login</button></li>
+                </ul>
+            </nav>
+        </div>
+       
+        <div id='login-form'class='login-page'>
+            <div class="form-box">
+                <div class='button-box'>
+                    <div id='btn'></div>
+                    <button type='button'onclick='login()'id='toggle-btn'>Log In</button>
+                    <button type='button'onclick='register()'id='toggle-btn1'>Register</button>
+                </div>
+                <form id='login' class='input-group-login'>
+                    <input type='text'id='line'onclick='l1()' class='input-field'placeholder='Email Id' autocomplete="off">
+		    <input type='password'id='line1' onclick='l2()'class='input-field'placeholder='Enter Password' required autocomplete="additional-name">
+		    <input type='checkbox'class='check-box'><span>Remember Password</span>
+		    <button type='submit'class='submit-btn'>Log in</button>
+		 </form>
+		 <form id='register' class='input-group-register'>
+		     <input type='text'class='input-field'placeholder='First Name' required-autocomplete="off">
+		     <input type='text'class='input-field'placeholder='Last Name ' required-autocomplete="off">
+		     <input type='email'class='input-field'placeholder='Email Id' required autocpmplete="off">
+		     <input type='password'class='input-field'placeholder='Enter Password' oninput='password()' id='pass' required autocomplete="off">
+             <i
+        class="fa fa-spinner fa-spin fa-3x fa-fw" id="loader"style="font-size: 18px;right:10px;bottom:172px; position: absolute;color:#999;opacity:0"></i>
+        <i class="fa fa-check" style="opacity: 1;font-size: 18px;right:10px;bottom:172px; position: absolute;color: green;opacity: 0;" id="tick"></i>
+		     <input type='password'class='input-field'placeholder='Confirm Password'  oninput='pcheck()' id='confirmation' required autocomplete="off">
+             <i
+             class="fa fa-spinner fa-spin fa-3x fa-fw" id="loader1"style="font-size: 18px;right:10px;bottom:124px; position: absolute;color:#999;opacity:0"></i>
+             <i class="fa fa-check" style="opacity: 1;font-size: 18px;right:10px;bottom:124px; position: absolute;color: green;opacity: 0"; id="tick1"></i>
+		     <input type='checkbox'class='check-box'><span>I agree to the terms and  conditions</span>
+                    <button type='submit'class='submit-btn'>Register</button>
+	         </form>
+            </div>
+        </div>
+        <div data-text="Dev-Souvik" id="profile">
+            Dev-Souvik
+        </div>
+    </div>
+    
+	
+    <script src="form.js"></script>
+   
+</body>
+</html>
