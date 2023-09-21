@@ -1,4 +1,4 @@
-alert("welcome user here");
+alert("welcome user here to login");
 
 var x=document.getElementById('login');
 var y=document.getElementById('register');
